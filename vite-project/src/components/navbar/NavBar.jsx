@@ -63,7 +63,6 @@ export default function NavBar() {
     setShowOffcanvas(!showOffcanvas);
   };
 
-  // Funzione per chiudere l'Offcanvas
   const closeOffcanvas = () => {
     setShowOffcanvas(false);
   };
@@ -74,11 +73,10 @@ export default function NavBar() {
         <div className="container-fluid">
           <div className="d-flex align-items-center mx-auto w-100">
             <Link to="/" className="navbar-brand">
-              ReHacktor
+              GameVault
             </Link>
             <SearchForm onSubmit={handleSearchSubmit} />
 
-            {/* Profilo visibile solo su Desktop */}
             <div className="d-none d-lg-flex align-items-center ms-auto">
               <img
                 className="rounded-circle custom-logo-img me-2"
@@ -124,7 +122,6 @@ export default function NavBar() {
               )}
             </div>
 
-            {/* Bottone OffCanvas visibile solo su Mobile */}
             <button
               className="navbar-toggler d-lg-none"
               type="button"
@@ -138,7 +135,6 @@ export default function NavBar() {
         </div>
       </nav>
 
-      {/* OffCanvas visibile solo su Mobile */}
       <div
         className={`offcanvas offcanvas-start bg-dark-grey-1 ${
           showOffcanvas ? "show" : ""
@@ -157,7 +153,6 @@ export default function NavBar() {
         </div>
 
         <div className="offcanvas-body text-center" onClick={closeOffcanvas}>
-          {/* Profilo visibile solo su Mobile */}
           <div className="profile-section mb-4 d-lg-none">
             <img
               className="rounded-circle custom-logo-img mb-2"
@@ -195,7 +190,6 @@ export default function NavBar() {
             )}
           </div>
 
-          {/* Sezione per i generi */}
           <div>
             <h3 className="white-1 mt-4">
               <i className="fa-solid fa-dice me-2 white-1 bg-medium-grey-1 rounded p-1"></i>
@@ -204,7 +198,6 @@ export default function NavBar() {
             <GenresSideBar />
           </div>
 
-          {/* Sezione per le piattaforme */}
           <div className="mt-4">
             <h3 className="white-1 mt-4">
               <i className="fa-solid fa-gamepad me-2 white-1 bg-medium-grey-1 rounded p-1"></i>
