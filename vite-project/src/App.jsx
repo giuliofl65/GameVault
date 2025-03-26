@@ -4,7 +4,7 @@ import Game from "./pages/game/game";
 import Genre from "./pages/genre/genre";
 import Platforms from "./pages/platforms/platforms";
 import SearchGame from "./pages/searchGames/searchgame";
-import SignUp from "./pages/SignUp/signup";
+import SignUp from "./pages/SignUp/signUp";
 import SignIn from "./pages/SignIn/signIn";
 import Account from "./pages/account/account";
 import Markup from "./layout";
