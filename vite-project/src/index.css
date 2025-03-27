@@ -996,7 +996,7 @@ input[type="file"] {
 
 @media (max-width: 450px) {
 
-    /* 🔹 Navbar */
+    /*  Navbar */
     .navbar-brand {
         font-size: 0.7rem;
     }
@@ -1038,13 +1038,13 @@ input[type="file"] {
     .search-button i {
         font-size: 1rem;
     }
-    /* 🔹 Logo */
+    /*  Logo */
     .custom-logo-img {
         width: 40px;
         height: 40px;
     }
 
-    /* 🔹 Layout principale */
+    /*  Layout principale */
     .gameWrapper {
         grid-template-columns: 1fr;
         gap: 10px;
@@ -1058,7 +1058,7 @@ input[type="file"] {
         flex-direction: column;
     }
 
-    /* 🔹 Form */
+    /*  Form */
     .form-widget {
         width: 90%;
         max-width: 350px;
@@ -1076,7 +1076,7 @@ input[type="file"] {
         height: 50px;
     }
 
-    /* 🔹 Pulsanti */
+    /*  Pulsanti */
     .remove,
     .add-button-game,
     .remove-button-game {
@@ -1085,7 +1085,7 @@ input[type="file"] {
         margin-left: 0;
     }
 
-    /* 🔹 Tabs */
+    /*  Tabs */
     .MuiTab-root {
         font-size: 0.9rem;
     }

@@ -81,7 +81,7 @@ const ReviewsSection = ({ gameId, gameName, gameImage }) => {
 
     console.log("Sending review...");
 
-    // Inseriamo anche il nome e l'immagine del gioco nella recensione
+
     const { data, error } = await supabase
       .from("reviews")
       .insert([
@@ -89,8 +89,8 @@ const ReviewsSection = ({ gameId, gameName, gameImage }) => {
           profile_id: userId,
           reviews: comment,
           game_id: gameId,
-          game_name: gameName, // Salviamo il nome del gioco
-          game_image: gameImage, // Salviamo l'immagine del gioco
+          game_name: gameName,
+          game_image: gameImage,
         },
       ])
       .select();
@@ -107,35 +107,35 @@ const ReviewsSection = ({ gameId, gameName, gameImage }) => {
       return;
     }
 
-    // Aggiungi la recensione appena inviata alla lista delle recensioni
+
     setReviews([
       { id: data[0].id, profile_id: userId, reviews: comment, username: "Tu" },
       ...reviews,
     ]);
-    setComment(""); // Reset del campo del commento
+    setComment("");
   };
 
   return (
     <>
       <div className="col-5 bg-light-dark-1 p-4 rounded game_reviews">
-        <h3 className="white-1">Lascia una recensione</h3>
+        <h3 className="white-1">Leave a Review</h3>
         <form onSubmit={handleSubmit}>
           <textarea
             className="w-100 p-2 bg-dark-grey-1 white-1 rounded border-0"
             value={comment}
             onChange={(e) => setComment(e.target.value)}
-            placeholder="Scrivi la tua recensione..."
+            placeholder="Write your review here..."
             rows="4"
           />
           <button type="submit" className="button primary mt-2">
-            Invia Recensione
+            Send Review
           </button>
         </form>
       </div>
       <div className="row">
         <div className="col-12">
           <div className="mt-4">
-            <h4 className="white-1">Ultime recensioni:</h4>
+            <h4 className="white-1">last reviews:</h4>
             <div className="reviews-container">
               <ul className="list-unstyled">
                 {reviews.map((review) => (
