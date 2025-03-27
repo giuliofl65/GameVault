@@ -62,3 +62,5 @@ Lista delle dipendenze usate nel progetto:
 ✅ ** Responsive design** → Ottimizzato per dispositivi desktop e mobile
 ✅ ** Notifiche in tempo reale** → Sistema di alert per azioni eseguite
 ---
+Link Progetto
+https://game-vault-9h6jvx67c-giulios-projects-779e6c5e.vercel.app/
