@@ -180,10 +180,10 @@ export default function NavBar() {
               </>
             ) : (
               <>
-                <Link to="/signIn" className="btn button primary mt-2 me-2">
+                <Link to="/login" className="btn button primary mt-2 me-2">
                   Sign In
                 </Link>
-                <Link to="/signUp" className="btn button primary mt-2">
+                <Link to="/register" className="btn button primary mt-2">
                   Sign Up
                 </Link>
               </>

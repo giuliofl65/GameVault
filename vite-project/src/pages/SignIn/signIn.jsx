@@ -53,7 +53,7 @@ export default function SignIn() {
             </button>
           </form>
           <p className="login-link">
-            Don't have an account? <Link to="/signup">Sign Up</Link>
+            Don't have an account? <Link to="/register">Sign Up</Link>
           </p>
           <Toaster position="bottom-center" />
         </div>

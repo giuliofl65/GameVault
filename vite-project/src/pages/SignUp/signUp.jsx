@@ -87,7 +87,7 @@ export default function SignUp() {
             </button>
           </form>
           <p className="login-link">
-            Already have an account? <Link href="/signin">Sign In</Link>
+            Already have an account? <Link href="/login">Sign In</Link>
           </p>
           <Toaster position="bottom-center" />
         </div>
