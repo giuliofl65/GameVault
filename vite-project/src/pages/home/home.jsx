@@ -1,8 +1,8 @@
 import { useState } from "react";
 import useFetchData from "../../hooks/useFetchData";
-import GameCard from "../../components/GameCard";
+import GameCard from "../../components/gameCard";
 import { PulseLoader } from "react-spinners";
-import Pagination from "../../components/Pagination";
+import Pagination from "../../components/pagination";
 
 export default function Home() {
   const [page, setPage] = useState(1);

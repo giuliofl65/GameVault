@@ -49,6 +49,7 @@ Lista delle dipendenze usate nel progetto:
 "react-spinners"
 "Material-UI"
 "Sonner"
+"date fns"
 ---
 ##  **Funzionalità principali**
 

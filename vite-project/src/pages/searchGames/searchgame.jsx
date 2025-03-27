@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useLocation } from "react-router";
 import { PulseLoader } from "react-spinners";
-import GameCard from "../../components/GameCard";
-import Pagination from "../../components/Pagination";
+import GameCard from "../../components/gameCard";
+import Pagination from "../../components/pagination";
 import useFetchData from "../../hooks/useFetchData";
 
 function useQuery() {

@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useParams } from "react-router";
-import GameCard from "../../components/GameCard";
+import GameCard from "../../components/gameCard";
 import useFetchData from "../../hooks/useFetchData";
 import { PulseLoader } from "react-spinners";
-import Pagination from "../../components/Pagination";
+import Pagination from "../../components/pagination";
 
 export default function Genre() {
   const { genreId } = useParams();
